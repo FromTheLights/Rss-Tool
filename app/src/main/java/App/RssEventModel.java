@@ -29,12 +29,12 @@ public class RssEventModel {
         this.description = description;
     }
 
-    public static void parseSource() {
+    public static void parseSource(String url) {
         SAXBuilder sax = new SAXBuilder();
         Document doc = new Document();
 
         try {
-            doc = sax.build("https://www.cbc.ca/webfeed/rss/rss-topstories");
+            doc = sax.build(url);
         } catch (Exception e) {
             System.out.println("Error opening URL"); // can be handled better
         }

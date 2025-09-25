@@ -22,12 +22,12 @@ public class MainFrame extends JFrame implements RssEventListener {
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        PanelTemplate rssConsultationPanel = new ConsultationView(controller);
+        PanelTemplate feedChooserView = new FeedChooserView(controller);
 
-        rssConsultationPanel.draw();
-        rssConsultationPanel
+        feedChooserView.draw();
+        feedChooserView
                 .setPreferredSize(new Dimension((int) (this.getHeight() * 0.85), (int) (this.getWidth() * 0.85)));
-        this.add(rssConsultationPanel);
+        this.add(feedChooserView);
     }
 
     public void UpdateUI(PanelTemplate view) {

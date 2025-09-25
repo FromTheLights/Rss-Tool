@@ -21,6 +21,11 @@ public class Controller {
         frame.UpdateUI(new AddView(this));
     }
 
+    public void openFeed(String url) {
+        RssEventModel.parseSource(url);
+        frame.UpdateUI(new ConsultationView(this));
+    }
+
     public void openModifyMenu(RssEventModel rssEvent) {
         frame.UpdateUI(new ModifyView(this, rssEvent));
     }

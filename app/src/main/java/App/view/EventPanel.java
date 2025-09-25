@@ -54,15 +54,15 @@ public class EventPanel extends PanelTemplate {
         gbc.weighty = 1;
 
 
-        this.add(new JLabel("<html><div style = 'width: 500px;'>" + rssEvent.getTitle() + "</div></html>"), gbc);
+        this.add(new JLabel("<html><div style = 'width: 1000px;'>" + rssEvent.getTitle() + "</div></html>"), gbc);
         gbc.gridy++;
-        this.add(new JLabel("<html><div style = 'width: 500px;'>" + rssEvent.getLink() + "</div></html>"), gbc);
+        this.add(new JLabel("<html><div style = 'width: 1000px;'>" + rssEvent.getLink() + "</div></html>"), gbc);
         gbc.gridy++;
-        this.add(new JLabel("<html><div style = 'width: 500px;'>" + rssEvent.getGuid() + "</div></html>"), gbc);
+        this.add(new JLabel("<html><div style = 'width: 1000px;'>" + rssEvent.getGuid() + "</div></html>"), gbc);
         gbc.gridy++;
-        this.add(new JLabel("<html><div style = 'width: 500px;'>" + rssEvent.getDate() + "</div></html>"), gbc);
+        this.add(new JLabel("<html><div style = 'width: 1000px;'>" + rssEvent.getDate() + "</div></html>"), gbc);
         gbc.gridy++;
-        this.add(new JLabel("<html><div style = 'width: 500px;'>" + rssEvent.getDescription() + "</div></html>"), gbc);
+        this.add(new JLabel("<html><div style = 'width: 1000px;'>" + rssEvent.getDescription() + "</div></html>"), gbc);
 
         // Buttons
         gbc = new GridBagConstraints();
